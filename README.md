@@ -49,7 +49,3 @@ To install or uninstall the extension, run:
 ```
 
 When running it as root (with `sudo`, `run0` or `pkexec`) the extension gets installed for all users.
-
-## License
-
-![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)
