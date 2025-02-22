@@ -1,11 +1,12 @@
-# Plasma 6 Service Menu ReImage
+# Dolphin GraphicsMagick Actions
 
-kde*service*menu*reimage is a package that extends the functionalities 
-of Dolphin/Konqueror adding many additionally sensible menu, reachables with 
-right click on the files. It's similar to GNOME Nautilus actions.
+WORK IN PROGRESS
 
-These actions are related to picture files:
+The "Dolpin GraphicsMagick Actions" Extension adds various image editing functionalities to the right-click menu of the KDE Dolphin File manager.
 
+To use it, you need to have [GraphicsMagick](http://www.graphicsmagick.org/) installed on your system (accessible in your `$PATH`). GraphicsMagick is a fork of ImageMagick, with a smaller codebase, and additional features. The fork is pretty long ago and both projects are active.
+
+Actions
 
  * Compress and resize
     * Advanced optimization for web
@@ -16,14 +17,10 @@ These actions are related to picture files:
     * Convert to all formats supported by ImageMagick
     * Convert to PDF or PDF/A*1
     * Generate favicons for browser/android/apple/ms
-    * Convert to Base64
     * Rotate
     * Overturn vertically/horizontally
 
  * Metadata
-    * Rename jpg and tiff files with data content in Exif metadata.
-(For example: 001.jpg *> 2018*04*27_133741.jpg)
-    * Rename jpg and tiff files with file's data.
     * Set file's datetime from Exif date.
     * Set file date from file's name
     * Set Exif datetime from file's date.
@@ -31,53 +28,28 @@ These actions are related to picture files:
     * Add comment
     * View metadata
     * Extract metadata to file
-    * Delete comment field
-    * Strip Exif section
-    * Delete IPTC section
-    * Delete XMP section
-    * Strip all unnecessary data
-    * Add timestamp from Exif
+    * Remove all metadata
 
  * Tools
     * Create animated GIF/APNG/WEBP
-    * Append to right
+    * Append to right, Append to bottom
     * GrayScale
-    * Sepia filter
     * Change transparent to color
-    * Add colored border
-    * Add transparent border
+    * Change color to transparent
+    * Replace color
     * Drop shadow
 
 ## Installation
 
-To install this app on your computer, run:
+To install or uninstall the extension, run:
 
 ```bash
-sudo ./install.sh
+./install.sh
+./uninstall.sh
 ```
 
-To uninstall this app from your computer, run:
-
-```bash
-sudo ./uninstall.sh
-```
-
-You can also install it on your profile only by omitting sudo.
+When running it as root (with `sudo`, `run0` or `pkexec`) the extension gets installed for all users.
 
 ## License
 
-Copyright (C) 2018-2019 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
-
-Copyright (C) 2024 Robert-André Mauchin <zebob.m(at)gmail.com>
-
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later
-version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with
-program. If not, see <https://www.gnu.org/licenses/>.
+![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)
